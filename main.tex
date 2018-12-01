@@ -6,7 +6,7 @@
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
 
-\documentclass[12pt,a4paper,sans]{moderncv}
+\documentclass[11pt,a4paper,sans]{moderncv}
 
 \usepackage{verbatim}
 
@@ -18,7 +18,7 @@
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
 
 % adjust the page margins
-\usepackage[scale=0.9,top=1cm, margin=2cm]{geometry}
+\usepackage[scale=0.9]{geometry}
 
 %\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
@@ -29,41 +29,35 @@
 % personal data
 \firstname{Prabhat}
 \familyname{Agarwal}
-\title{4th Year CSE Undergraduate, IIT Kharagpur}           
-\address{AW-310, M.S.Hall, IIT Kharagpur}{}    % optional, remove the line if not wanted
+\title{Analyst, Goldman Sachs Group, Inc}           
+%\address{5t}{}    % optional, remove the line if not wanted
 \mobile{+918697823093}                    % optional, remove the line if not wanted
 \email{prabhat.agr2010@gmail.com}                      % optional, remove the line if not wanted
 \social[github]{prabhat1081}
+%\social[linkedin]{agarwal-prabhat}
 %\social[stackoverflow][stackoverflow.com/users/3465519/ma08]{ma08}
 %\homepage{ma08.github.io}                % optional, remove the line if not wanted
 %\extrainfo{\httplink[stackoverflow/ma08]{stackoverflow.com/users/3465519/ma08}} % optional, remove the line if not wanted
 
-\newcommand\Mycventry[6]{%
-\cventry{#1}{#2}{#3}{#4}{#5}{\fontsize{12}{15}\selectfont#6 }}
-\renewcommand*\titlefont{\fontsize{15}{24}\selectfont}
-\newcommand\Mycvline[2]{%
-\cvline{#1}{\selectfont \fontfamily{\sfdefault}\fontsize{12}{15}\selectfont#2 }}
 % to show numerical labels in the bibliography; only useful if you make citations in your resume
 %\makeatletter
 %\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
 %\makeatother
 
-%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
 
-\vspace*{-2\baselineskip}
-\maketitle
-\vspace*{-1.5\baselineskip}
+\makecvtitle
 %\vspace*{-8mm}
-\pagestyle{empty}
+%\pagestyle{empty}
 
 
 \section{Education}
-\cventry{2013--Present}{Computer Science and Engineering (B.Tech)}{}{IIT Kharagpur, West Bengal}{}{}
-\cvline{CGPA:}{\small 9.93/10}
+\cventry{\textbf{2013--2017}}{B.Tech (Hons.) in Computer Science and Engineering}{}{IIT Kharagpur, West Bengal}{}{}
+\cvline{CGPA:}{\small 9.93/10 (Dep. Rank: 1, Inst. Rank: 2)}
 \cventry{\textbf{2013}}{Indian School Certificate Examination(ISC)}{}{Maria's Day School, Howrah, West Bengal}{}{}
 \cvline{Aggregate:}{\small 96.83\%}
 \cventry{\textbf{2011}}{Indian Certificate of Secondary Education Examination(ICSE)}{}{Maria's Day School, Howrah, West Bengal}{}{}  % arguments 3 to 6 can be left empty
@@ -72,21 +66,28 @@
 
 \section{Awards and Achievements}
 
-\cvitem{2016}{Received J.C. Ghosh Memorial Endowment Prize for securing highest CGPA in the department at the end of 6th semester.}
+\cvitem{2017}{Awarded Bigyan Sinha Memorial Endownment Prize for being second best student in order of merit in the graduating B.Tech(Hons.) batch of 2017, IIT Kharagpur}
+
+\cvitem{2017}{Awarded Institute Silver Medal for being the best student in order of merit among the graduating B.Tech(Hons.) degree in Computer Science and Engineering}
+
+%\cvitem{2016}{Received J.C. Ghosh Memorial Endowment Prize for securing highest CGPA in the department at the end of 6th semester.}
 
 \cvitem{2016}{Secured 1st position in a team of 4 in event Code-O-Shuffle in Kshitij, 2016.}
-\cvitem{2015}{Was awarded with Goralal Syngal Memorial Scholarship for securing 2nd highest CGPA at the end of 4th semester among the students of department of CSE, ECE and EE.}
-\cvitem{2015}{Received Sachinandan Basak Memorial Endowment Prize for best NSS volunteer student of the year 2014-15 among about 400 students.}
+%\cvitem{2015}{Was awarded with Goralal Syngal Memorial Scholarship for securing 2nd highest CGPA at the end of 4th semester among the students of department of CSE, ECE and EE.}
+\cvitem{2015}{Awarded Sachinandan Basak Memorial Endowment Prize for best NSS volunteer student of the year 2014-15 among about 400 students.}
+
+\renewcommand{\bibliographyitemlabel}{{\@2017}}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{./publications}
 
 
+\section{Work Experience}
 
+\cventry{Jun 2017 - Present}{Analyst}{}{Goldman Sachs Group, Inc}{}{
+}
 
-
-
-\section{Internships}
-
-
-\Mycventry{May-Jul 2016}{Summer Analyst}{}{Goldman Sachs Group, Inc}{}{
+\cventry{May-Jul 2016}{Summer Analyst}{}{Goldman Sachs Group, Inc}{}{
 \begin{description}
   \item[$\bullet$] Developed a module system, following JDK9’s module specifications, for firm’s platform based on JDK8 providing interoperability between several JVM languages and firm’s proprietary language.
   \item[$\bullet$] The module system provides means to organize code, to have encapsulation, communication contract and loose coupling between modules leading to enhanced platform scalability, integrity and performance.
@@ -97,7 +98,7 @@
 }
 
 
-\Mycventry{May-Jul, 2015}{Summer Intern}{}{Prof. D B Phatak, IIT Bombay}{}{
+\cventry{May-Jul, 2015}{Summer Intern}{}{Prof. D B Phatak, IIT Bombay}{}{
 \begin{description}
   \item[$\bullet$] Developed a website (codzilla.org.in) in a team of 4 to help users learn programming languages from basics.
   \item[$\bullet$] The website provides pracitice questions of various types and levels, and also provides a platform to create new questions wherein parts of code can be made visible, invisible or editable for the user.
@@ -105,52 +106,71 @@
 \end{description}
 }
 
-\section{Projects}
+\section{Key Projects}
 
-\Mycventry{Jan-Apr 2016}{Citation Recommendation based on citation contexts}{}{Prof. Pawan Goyal}{}{
+\cventry{Jan-May 2017}{Stance Classification}{B.Tech Thesis}{Prof. Pawan Goyal}{}{
+}
+
+\cventry{Jul 2016 - Apr 2017}{Ranking checkworkthy claims}{B.Tech Thesis}{Prof. Pawan Goyal and Prof.name}{}{
+}
+
+
+\cventry{Jul-Nov 2016}{Anomaly Detection in Surveillance Video Feeds}{}{Prof. Pabitra Mitra}{}{
 \begin{description}
-\item[$\bullet$] Developed (in team of 6) a system to recommend scientific articles to cite in a paper given the citation context.
-\item[$\bullet$] Used different ranking schemes: tf-idf, BM25, LSA, and their variants giving different weightage to different sections of a document.
+\item[$\bullet$] Used Time Series analysis over frame level features to detect anomalous frames in stationary surveillance videos.
+\end{description}
+}
+
+\cventry{Jul-Nov 2016}{Automated Abstract generation of Scientific Articles using Deep Learning}{}{Prof. Pawan Goyal}{}{
+\begin{description}
+\item[$\bullet$] Used Para2Vec to learn low dimensional representations of individual sections of scientific articles.
+\item[$\bullet$] Modelled document as a sequence of sections and employed Sequence to Sequence model of LSTMs on the learnt representations to generate abstractive summary.
+\end{description}
+}
+
+\cventry{Jan-Apr 2016}{Citation Recommendation based on citation contexts}{}{Prof. Pawan Goyal}{}{
+\begin{description}
+\item[$\bullet$] Developed (in team of 6) a system to recommend scientific articles to cite in a paper for queried citation context.
+\item[$\bullet$] Used popular IR algorithms like tf-idf, BM25, LSA, query expansion, etc.
 \item[$\bullet$] Achieved a Mean Reciprocal Rank (MRR) of 0.2 on a test dataset of 1000 scientific articles.
 \end{description}
 }
 
-% \Mycventry{Jan-Mar 2016}{Online Course Management System}{}{DBMS Project}{}{
-% \begin{description}
-% \item[$\bullet$] Developed (in a team of 3) an online learning system using CodeIgniter in PHP for backend, MySQL for database and Materialize for frontend.
-% \item[$\bullet$] The system allows students to take courses, watch lectures, solve quizzes, etc., and also allows faculty to create courses, upload lectures,
-% create different types of quizzes, etc.
-% \item[$\bullet$] Developed both the frontend and backend of the faculty module of the system.
-% \end{description}
-% }
+\cventry{Jan-Apr 2016}{Performance profiling for large scale query DB <name>}{}{}{}{
+}
 
-% \Mycventry{Aug-Nov 2015}{Simple compiler for TinyC}{}{Compilers Project}{}{
-% \begin{description}
-% \item[$\bullet$] Compiler for a reduced version of \texttt{C} targeted at \texttt{x86\_64} architecture.
-% \item[$\bullet$] Developed in \texttt{C++}. Used \texttt{Flex} for lexical analysis, \texttt{Bison} for syntax analyzer and TAC code generator and \texttt{GAS} as assembler for the assembly code generated.
-% \end{description}
-% }
-
-\Mycventry{Aug-Nov 2015}{Detection and Analysis of abuses in code-mixed tweets}{}{Prof. Pawan Goyal and Dr. Monojit Choudhury (Microsoft Research India)}{}{
+\cventry{Jan-Apr 2016}{Online Course Management System}{}{}{}{
 \begin{description}
-\item[$\bullet$] Developed a rule based classifier (with 72\% precision) to detect abuses in romanized Hindi and English tweets.
-\item[$\bullet$] Used phonetics to match words in Romanized Hindi to account for large variations in spelling.
-\item[$\bullet$] Analyzed the relation of abusing behavior of users with their gender, location, tweet type, etc.
+\item[$\bullet$] Created a web based application aimed at self-paced learning featuring online course design, text and video based
+course content, course calendar publishing, automated quizzes and exams, discussion forums, and e-mail communcation.
 \end{description}
 }
 
-\Mycventry{Mar 2015}{PlotIt}{}{Opensoft, IIT Kharagpur}{}{
+\cventry{Jul 2015 - Jan 2016}{Code switching and swearing patterns on social media}{}{Prof. Pawan Goyal and Dr. Monojit Choudhury (Microsoft Research, India)}{}{
+\begin{description}
+\item[$\bullet$] Developed a rule based classifier (with 72\% precision) to detect swears in romanized Hindi and English tweets.
+\item[$\bullet$] Used phonetics to match swears in romanized Hindi to account for large spelling variations in transliteration.
+\item[$\bullet$] Studied correlation of topic, gender, location and language preferences while swearing
+\end{description}
+}
+
+
+\cventry{Jul-Nov 2015}{Compiler for TinyC}{}{}{}{
+\begin{description}
+\item[$\bullet$] Built a compiler for TinyC (language having subset of features of \texttt{C}) targeted at \texttt{x86\_64} architecture using \texttt{Flex} and \texttt{Bison}.
+\end{description}
+}
+
+\cventry{Mar 2015}{PlotIt}{}{Opensoft, IIT Kharagpur}{}{
 \begin{description}
 \item[$\bullet$] Team(of 10) secured 4th place in the competition.
-\item[$\bullet$] Developed in \texttt{python}. Used \texttt{sympy}, \texttt{matplotlib} and \texttt{mayavi} for plotting.
-\item[$\bullet$] Responsible primarily for building the GUI using \texttt{PyQt} - a \texttt{python} wrapper for \texttt{Qt}.
-\item[$\bullet$] Implemented accordion interface to specify the different plots and related settings for the plot.
+\item[$\bullet$] Designed and developed UI using PyQt for PlotIt, a tool to plot graphs in 2D and 3D.
 \end{description}
 }
 
 
 \begin{comment}
-\Mycventry{2013}{Restaurant Automation System}{}{Software Engineering Project}{}{
+\cventry{2013}{Restaurant Automation System}{}{Software Engineering Project}{}{
 \begin{description}
 \item[$\bullet$] Developed using \texttt{Java} for Software Engineering Course by a team of 2. A software to automate the billing, order processing, and accounting activities of a restaurant.
 \item[$\bullet$] Automatic generation of \texttt{Purchase Order} to make supply ordering more accurate based on previous consumption.
@@ -159,31 +179,20 @@
 }
 \end{comment}
 
-
-
-\bigskip
-\bigskip
-\bigskip
 \section{Technical Experience}
-\subsection{Proficient With}
-\cvline{languages}{\texttt{C, C++, Java, Python, JavaScript, HTML, CSS}}
-\cvline{softwares and libraries}{\texttt{STL, JQuery, Bootstrap}}
-\cvline{operating system}{\texttt{Windows, Linux}}
-\subsection{Have Experience With}
-\cvline{languages}{\texttt{C\#, Verilog, PHP, MySQL}}
-\cvline{softwares and libraries}{\texttt{Bison, Flex, CodeIgniter. NLTK}}
+\cvline{languages}{\texttt{C, C++, Java, Python, JavaScript, Haskell}}
+\cvline{machine learning tools}{\texttt{scikit-learn, gensim, Tensorflow}}
+\cvline{others}{\texttt{NLTK, gdb, Git}}
 
-% \section{Relevant Coursework}
+\section{Relevant Coursework}
 
-
-
-
-% \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
-
-% \cvlistdoubleitem{Social Computing}{Database Management Systems}
-% \cvlistdoubleitem{Information Retrieval}{Machine Learning*}
-% \cvlistdoubleitem{Natural Language And Processing*}{Artificial Intelligence*}
-% \cvlistitem{Parallel and Distributed Algorithms*}
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+\cvlistdoubleitem{Algorithms - I\&II}{Probability \& Statistics}
+\cvlistdoubleitem{Operating Systems}{Computer Organization \& Architecture}
+\cvlistdoubleitem{Social Computing}{Database Management Systems}
+\cvlistdoubleitem{Information Retrieval}{Machine Learning}
+\cvlistdoubleitem{Speech \& Natural Language Processing}{Artificial Intelligence}
+\cvlistdoubleitem{Deep Learning}{Parallel \& Distributed Algorithms}
 
 % \cvitem{}{ \footnotesize{
 % \textsuperscript{*}To be completed before Dec 2014}}
@@ -192,16 +201,18 @@
 \section{Extra Curricular Activities}
 
 
-\Mycventry{2013--2015}{Volunteer, National Service Scheme Unit-3}{IIT Kharagpur}{}{}{
+\cventry{2013--2015}{Volunteer, National Service Scheme Unit-3}{IIT Kharagpur}{}{}{
 \begin{description}
 \item[$\bullet$] Team Leader of the gold winning unit in NSS Annual Camp-2014.
 \item[$\bullet$] Group Leader of the unit for the academic session 2014-2015.
 \end{description}
 }
 
-\Mycventry{2013--Present}{Member, The KGPian Game Theory Society}{IIT Kharagpur}{}{}{
-Studied various aspects of Game Theory and its applications.
-Published an article \texttt{Inheritance and Game Thoery} in  \texttt{The Strategist}, the newsletter of the society about an application of multi-person prisoner's dilemma in real life.
+\cventry{2013--2017}{Member, The KGPian Game Theory Society}{IIT Kharagpur}{}{}{
+\begin{description}
+\item[$\bullet$] Published an article \texttt{Inheritance and Game Thoery} in  \texttt{The Strategist}, the newsletter of the society about an application of multi-person prisoner's dilemma in real life. 
+\item[$\bullet$] Developed an online multiplayer game based on multi-round Split or Steal for our annual event, War of Wits, with a participation of around 500 people.
+\end{description}
 }
 %\Mycventry{2008--2010}{Football Team}{V.P.S Public School}{}{}{
 %Part of school team in 9th and 10th class. Took part in an Interschool Tournament and reached the semifinals.
