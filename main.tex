@@ -30,7 +30,7 @@
 \firstname{Prabhat}
 \familyname{Agarwal}
 \title{Analyst, Goldman Sachs Group, Inc}           
-%\address{5t}{}    % optional, remove the line if not wanted
+\address{5th Cross, 27th Main, Ejipura}{Bangalore-560047}{India}    % optional, remove the line if not wanted
 \mobile{+918697823093}                    % optional, remove the line if not wanted
 \email{prabhat.agr2010@gmail.com}                      % optional, remove the line if not wanted
 \social[github]{prabhat1081}
@@ -85,68 +85,44 @@
 \section{Work Experience}
 
 \cventry{Jun 2017 - Present}{Analyst}{}{Goldman Sachs Group, Inc}{}{
+\begin{description}
+    \item[$\bullet$] Designed and developed a tool to helpresolve write conflicts in firm's proprietary multi--master gloablly replicated database. Achieved a performance improvement of 1000\% over the existing tool. 
+    \item[$\bullet$] Developed a proof of concept for a scalable, highly available distributed database service to allow trade booking and real-time risk calculation for all businesses of the firm with sub--millisecond latencies for reads and writes.
+\end{description}
 }
 
 \cventry{May-Jul 2016}{Summer Analyst}{}{Goldman Sachs Group, Inc}{}{
 \begin{description}
   \item[$\bullet$] Developed a module system, following JDK9’s module specifications, for firm’s platform based on JDK8 providing interoperability between several JVM languages and firm’s proprietary language.
-  \item[$\bullet$] The module system provides means to organize code, to have encapsulation, communication contract and loose coupling between modules leading to enhanced platform scalability, integrity and performance.
-  \item[$\bullet$] Designed a JSON specification to define a module's communication contract, including its exposed interfaces and dependencies.
-  \item[$\bullet$] Enhanced the platform’s distributed build system to enforce the module’s communication contract during build, ensuring reliable configuration.
-  \item[$\bullet$] Built a runtime system using Java class-loader hierarchy to enforce encapsulation at runtime and provide loose coupling.
+  \item[$\bullet$] Designed a JSON specification to define a module's communication contract, enhanced the platform’s distributed build system to enforce the contract during build,and designed a custom Java runtime using Java class-loader hierarchy to enforce encapsulation at runtime.
 \end{description}
 }
 
-
 \cventry{May-Jul, 2015}{Summer Intern}{}{Prof. D B Phatak, IIT Bombay}{}{
 \begin{description}
-  \item[$\bullet$] Developed a website (codzilla.org.in) in a team of 4 to help users learn programming languages from basics.
-  \item[$\bullet$] The website provides pracitice questions of various types and levels, and also provides a platform to create new questions wherein parts of code can be made visible, invisible or editable for the user.
-  \item[$\bullet$] Worked primarily on the client side, using javascript and jquery, and also implemented the HTML processing module in Java as part of backend to manipulate the html to provide the facilities described above.
+  \item[$\bullet$] Developed a web-based application (codzilla.org.in) to help in basic programming language courses.
+  \item[$\bullet$] The application provides a platform to curate various types of questions and allows user to compile and execute their solutions.
 \end{description}
 }
 
 \section{Key Projects}
 
-\cventry{Jan-May 2017}{Stance Classification}{B.Tech Thesis}{Prof. Pawan Goyal}{}{
-}
-
-\cventry{Jul 2016 - Apr 2017}{Ranking checkworkthy claims}{B.Tech Thesis}{Prof. Pawan Goyal and Prof.name}{}{
-}
-
-
-\cventry{Jul-Nov 2016}{Anomaly Detection in Surveillance Video Feeds}{}{Prof. Pabitra Mitra}{}{
+\cventry{Jul 2016 - Apr 2017}{FactRanker: Automatic Ranking of check-worthy claims}{B.Tech Thesis}{Dr. Pawan Goyal and Dr. Saurabh Bagchi (Purdue University)}{}{
 \begin{description}
-\item[$\bullet$] Used Time Series analysis over frame level features to detect anomalous frames in stationary surveillance videos.
+\item[$\bullet$] Curated a dataset of political debates from the 2016 US Presidential election campaign annotated using all major fact-checking media outlets.
+\item[$\bullet$] Designed a system FactRanker to rank claims by their checkworthiness using score of a SVN classifier trained on text (POS tags, sentiment, word dependencies)  and contextual features (topic, sentence homogeneity).
+\item[$\bullet$] Improved the then state--of--the--art (ClaimBuster) in ranking checkworthy claims by 21.7\% in NDGC\@100.
 \end{description}
 }
 
-\cventry{Jul-Nov 2016}{Automated Abstract generation of Scientific Articles using Deep Learning}{}{Prof. Pawan Goyal}{}{
+\cventry{Jan-May 2017}{Stance Classification of News Articles}{B.Tech Thesis}{Dr. Pawan Goyal}{}{
 \begin{description}
-\item[$\bullet$] Used Para2Vec to learn low dimensional representations of individual sections of scientific articles.
-\item[$\bullet$] Modelled document as a sequence of sections and employed Sequence to Sequence model of LSTMs on the learnt representations to generate abstractive summary.
+\item[$\bullet$] Designed a classier using bidirectional conditional encoding with word-by-word attention to classify if an article agrees, disagrees or is neutral to statement or headline.
+\item[$\bullet$] Achieved an accuracy of 74.52\%, an improvement of 10.1\% over the baseline model.
 \end{description}
 }
 
-\cventry{Jan-Apr 2016}{Citation Recommendation based on citation contexts}{}{Prof. Pawan Goyal}{}{
-\begin{description}
-\item[$\bullet$] Developed (in team of 6) a system to recommend scientific articles to cite in a paper for queried citation context.
-\item[$\bullet$] Used popular IR algorithms like tf-idf, BM25, LSA, query expansion, etc.
-\item[$\bullet$] Achieved a Mean Reciprocal Rank (MRR) of 0.2 on a test dataset of 1000 scientific articles.
-\end{description}
-}
-
-\cventry{Jan-Apr 2016}{Performance profiling for large scale query DB <name>}{}{}{}{
-}
-
-\cventry{Jan-Apr 2016}{Online Course Management System}{}{}{}{
-\begin{description}
-\item[$\bullet$] Created a web based application aimed at self-paced learning featuring online course design, text and video based
-course content, course calendar publishing, automated quizzes and exams, discussion forums, and e-mail communcation.
-\end{description}
-}
-
-\cventry{Jul 2015 - Jan 2016}{Code switching and swearing patterns on social media}{}{Prof. Pawan Goyal and Dr. Monojit Choudhury (Microsoft Research, India)}{}{
+\cventry{Jul 2015 - Jan 2016}{Code switching and swearing patterns on social media}{}{Dr. Pawan Goyal and Dr. Monojit Choudhury (Microsoft Research, India)}{}{
 \begin{description}
 \item[$\bullet$] Developed a rule based classifier (with 72\% precision) to detect swears in romanized Hindi and English tweets.
 \item[$\bullet$] Used phonetics to match swears in romanized Hindi to account for large spelling variations in transliteration.
@@ -154,6 +130,33 @@ course content, course calendar publishing, automated quizzes and exams, discuss
 \end{description}
 }
 
+\cventry{Jan-Apr 2016}{Citation Recommendation based on citation contexts}{}{Dr. Pawan Goyal}{}{
+\begin{description}
+\item[$\bullet$] Developed a system to recommend scientific articles to cite in a paper for queried citation context.
+\item[$\bullet$] Used popular IR algorithms like tf-idf, BM25, LSA, query expansion, etc.
+\item[$\bullet$] Achieved a Mean Reciprocal Rank (MRR) of 0.2 on a test dataset of 1000 scientific articles.
+\end{description}
+}
+
+\cventry{Jul-Nov 2016}{Anomaly Detection in Surveillance Video Feeds}{}{Dr. Pabitra Mitra}{}{
+\begin{description}
+\item[$\bullet$] Used Time Series analysis over frame level feature representation to detect anomalous frames in stationary surveillance videos.
+\end{description}
+}
+
+\cventry{Jul-Nov 2016}{Automated Abstract generation of Scientific Articles using Deep Learning}{}{Dr. Pawan Goyal}{}{
+\begin{description}
+\item[$\bullet$] Used Para2Vec to learn low dimensional representations of individual sections of scientific articles.
+\item[$\bullet$] Modelled document as a sequence of sections and employed Sequence to Sequence model of LSTMs on the learnt representations to generate abstractive summary.
+\end{description}
+}
+
+\cventry{Jan-Apr 2016}{Online Course Management System}{}{}{}{
+\begin{description}
+\item[$\bullet$] Created a web based application aimed at self-paced learning featuring online course design, text and video based
+course content, course calendar publishing, automated quizzes and exams, discussion forums, and e-mail communication.
+\end{description}
+}
 
 \cventry{Jul-Nov 2015}{Compiler for TinyC}{}{}{}{
 \begin{description}
@@ -167,17 +170,6 @@ course content, course calendar publishing, automated quizzes and exams, discuss
 \item[$\bullet$] Designed and developed UI using PyQt for PlotIt, a tool to plot graphs in 2D and 3D.
 \end{description}
 }
-
-
-\begin{comment}
-\cventry{2013}{Restaurant Automation System}{}{Software Engineering Project}{}{
-\begin{description}
-\item[$\bullet$] Developed using \texttt{Java} for Software Engineering Course by a team of 2. A software to automate the billing, order processing, and accounting activities of a restaurant.
-\item[$\bullet$] Automatic generation of \texttt{Purchase Order} to make supply ordering more accurate based on previous consumption.
-\item[$\bullet$] Generation of statistics report of sales, purchases of different ingredients and items.
-\end{description}
-}
-\end{comment}
 
 \section{Technical Experience}
 \cvline{languages}{\texttt{C, C++, Java, Python, JavaScript, Haskell}}
@@ -194,12 +186,7 @@ course content, course calendar publishing, automated quizzes and exams, discuss
 \cvlistdoubleitem{Speech \& Natural Language Processing}{Artificial Intelligence}
 \cvlistdoubleitem{Deep Learning}{Parallel \& Distributed Algorithms}
 
-% \cvitem{}{ \footnotesize{
-% \textsuperscript{*}To be completed before Dec 2014}}
-
-
 \section{Extra Curricular Activities}
-
 
 \cventry{2013--2015}{Volunteer, National Service Scheme Unit-3}{IIT Kharagpur}{}{}{
 \begin{description}
@@ -214,12 +201,5 @@ course content, course calendar publishing, automated quizzes and exams, discuss
 \item[$\bullet$] Developed an online multiplayer game based on multi-round Split or Steal for our annual event, War of Wits, with a participation of around 500 people.
 \end{description}
 }
-%\Mycventry{2008--2010}{Football Team}{V.P.S Public School}{}{}{
-%Part of school team in 9th and 10th class. Took part in an Interschool Tournament and reached the semifinals.
-%}
-
-%\Mycventry{}{Other Current Hobbies}{}{}{}{
-%Web Programming, Camping, Hiking, Backpacking, Traveling, Road Trips, Basketball, Piano, Guitar
-%}
 
 \end{document}
