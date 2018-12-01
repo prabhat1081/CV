@@ -24,6 +24,8 @@
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 %\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
 
+\renewcommand*{\namefont}{\fontsize{24}{26}\mdseries\upshape}
+\renewcommand*{\titlefont}{\large\mdseries\slshape}
 
 %\renewcommand*{\namefont}{\fontsize{42}{40}\mdseries\upshape}
 % personal data
@@ -33,7 +35,7 @@
 \address{5th Cross, 27th Main, Ejipura}{Bangalore-560047}{India}    % optional, remove the line if not wanted
 \mobile{+918697823093}                    % optional, remove the line if not wanted
 \email{prabhat.agr2010@gmail.com}                      % optional, remove the line if not wanted
-\social[github]{prabhat1081}
+%\social[github]{prabhat1081}
 %\social[linkedin]{agarwal-prabhat}
 %\social[stackoverflow][stackoverflow.com/users/3465519/ma08]{ma08}
 %\homepage{ma08.github.io}                % optional, remove the line if not wanted
@@ -179,12 +181,9 @@ course content, course calendar publishing, automated quizzes and exams, discuss
 \section{Relevant Coursework}
 
 \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
-\cvlistdoubleitem{Algorithms - I\&II}{Probability \& Statistics}
-\cvlistdoubleitem{Operating Systems}{Computer Organization \& Architecture}
-\cvlistdoubleitem{Social Computing}{Database Management Systems}
-\cvlistdoubleitem{Information Retrieval}{Machine Learning}
-\cvlistdoubleitem{Speech \& Natural Language Processing}{Artificial Intelligence}
-\cvlistdoubleitem{Deep Learning}{Parallel \& Distributed Algorithms}
+\cvline{Fundamentals}{Algorithms, Probability \& Statistics}
+\cvline{Systems}{Operating Systems, Computer Organization \& Architecture, Database Management Systems, Parallel \& Distributed Algorithms}
+\cvline{Artificial Intelligence}{Artificial Intelligence, Machine Learning, Information Retrieval, Social Computing, Speech \& Natural Language Processing, Deep Learning}
 
 \section{Extra Curricular Activities}
 
