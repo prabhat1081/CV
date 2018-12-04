@@ -40,7 +40,7 @@
 %\social[github]{prabhat1081}
 %\social[linkedin]{agarwal-prabhat}
 %\social[stackoverflow][stackoverflow.com/users/3465519/ma08]{ma08}
-%\homepage{ma08.github.io}                % optional, remove the line if not wanted
+\homepage{prabhat1081.github.io}                % optional, remove the line if not wanted
 %\extrainfo{\httplink[stackoverflow/ma08]{stackoverflow.com/users/3465519/ma08}} % optional, remove the line if not wanted
 
 % to show numerical labels in the bibliography; only useful if you make citations in your resume
@@ -62,10 +62,11 @@
 \section{Education}
 \cventry{\textbf{2013--2017}}{B.Tech (Hons.) in Computer Science and Engineering}{IIT Kharagpur}{West Bengal}{}{}
 \cvline{CGPA:}{\small 9.93/10 (Dep. Rank: 1, Inst. Rank: 2)}
+\begin{comment}
 
 \cventry{\textbf{2013}}{Indian School Certificate Examination (ISC)}{}{Maria's Day School, Howrah, West Bengal}{}{}
 \cvline{Aggregate:}{\small 96.83\%}
-\begin{comment}
+
 \cventry{\textbf{2011}}{Indian Certificate of Secondary Education Examination (ICSE)}{}{Maria's Day School, Howrah, West Bengal}{}{}  % arguments 3 to 6 can be left empty
 \cvline{Aggregate:}{\small 95.43\%}
 \end{comment}
@@ -104,15 +105,15 @@
 \cventry{Jul 2016 - Apr 2017}{FactRanker: Automatic Ranking of check-worthy claims}{B.Tech Thesis}{\href{http://cse.iitkgp.ac.in/~pawang/}{Dr. Pawan Goyal} and  \href{https://engineering.purdue.edu/~sbagchi/}{Dr. Saurabh Bagchi (Purdue University)}}{}{
 \begin{description}
 \item[$\bullet$] Curated a dataset of political debates from the 2016 US Presidential election campaign annotated using all major fact-checking media outlets.
-\item[$\bullet$] Designed a system FactRanker to rank claims by their check--worthiness using the score of an SVN classifier trained on text (e.g. POS tags, sentiment, word dependencies) and contextual features (e.g. topic, sentence homogeneity).
-\item[$\bullet$] Improved the then state--of--the--art (ClaimBuster) in ranking check--worthy claims by 21.7\% in NDGC\@100.
+\item[$\bullet$] Designed a system FactRanker to rank claims by their check--worthiness using the score of an SVM classifier trained on text (e.g. POS tags, sentiment, word dependencies) and contextual features (e.g. topic, sentence homogeneity).
+\item[$\bullet$] Improved the then state--of--the--art (ClaimBuster) in ranking check--worthy claims by 21.7\% in NDCG@100.
 \end{description}
 }
 
 \cventry{Jan-May 2017}{Stance Classification of News Articles}{B.Tech Thesis}{\href{http://cse.iitkgp.ac.in/~pawang/}{Dr. Pawan Goyal}}{}{
 \begin{description}
-\item[$\bullet$] Designed a classier using bidirectional conditional encoding with word-by-word attention to classify if an article agrees, disagrees or is neutral to statement or headline.
-\item[$\bullet$] Achieved an accuracy of 74.52\%, an improvement of 10.1\% over the baseline model.
+\item[$\bullet$] Designed a classifier using bidirectional conditional encoding with word-by-word attention to classify if an article agrees, disagrees or is neutral to a given statement or headline.
+\item[$\bullet$] Achieved an accuracy of 74.52\%, an improvement of 10.1\% over the baseline model using text features.
 \end{description}
 }
 
@@ -120,7 +121,7 @@
 \begin{description}
 \item[$\bullet$] Developed a rule-based classifier (with 72\% precision) to detect swears in Romanized Hindi and English tweets.
 \item[$\bullet$] Used phonetics to match swears in Romanized Hindi to account for large spelling variations in transliteration.
-\item[$\bullet$] Studied correlation of topic, gender, location, and language preferences while swearing
+\item[$\bullet$] Studied correlation of topic, gender, location, and language preferences while swearing.
 \end{description}
 }
 
@@ -160,12 +161,14 @@ course content, course calendar publishing, automated quizzes and exams, discuss
 \end{description}
 }
 
+\begin{comment}
 \cventry{Mar 2015}{PlotIt}{}{Opensoft (Inter hostel tech competition), IIT Kharagpur}{}{
 \begin{description}
 \item[$\bullet$] Team (of 10) secured 4th place in the competition.
 \item[$\bullet$] Designed and developed UI using PyQt for PlotIt, a tool to plot graphs in 2D and 3D.
 \end{description}
 }
+\end{comment}
 
 
 \section{Awards and Achievements}
@@ -176,16 +179,16 @@ course content, course calendar publishing, automated quizzes and exams, discuss
 
 \cvitem{2017}{Won bronze medal in Opensoft (inter hostel tech competition) for developing a distributed web-based photo-sharing app using blockchain.}
 
-\cvitem{2016}{Received J.C. Ghosh Memorial Endowment Prize for securing highest CGPA in the department at the end of 6th semester.}
+%\cvitem{2016}{Received J.C. Ghosh Memorial Endowment Prize for securing highest CGPA in the department at the end of 6th semester.}
 
-\cvitem{2016}{Secured 1st position in a team of 4 in event Code-O-Shuffle (online programming competition) in Kshitij (annual techno-management fest), IIT Kharagpur, 2016.}
+%\cvitem{2016}{Secured 1st position in a team of 4 in event Code-O-Shuffle (online programming competition) in Kshitij (annual techno-management fest), IIT Kharagpur, 2016.}
 %\cvitem{2015}{Was awarded Goralal Syngal Memorial Scholarship for securing 2nd highest CGPA at the end of 4th semester among the students of the department of CSE, ECE, and EE.}
 \cvitem{2015}{Awarded Sachinandan Basak Memorial Endowment Prize for best National Social Service (program aimed at developing rural areas near institutes) volunteer student of the year 2014-15 among about 400 students.}
 
 \section{Technical Experience}
 \cvline{languages}{\texttt{C, C++, Java, Python, JavaScript, Haskell}}
 \cvline{machine learning tools}{\texttt{scikit-learn, gensim, Tensorflow}}
-\cvline{others}{\texttt{NLTK, gdb, Git}}
+\cvline{others}{\texttt{NLTK, gdb, Git, network and systems programming}}
 
 \section{Relevant Coursework}
 
@@ -199,7 +202,7 @@ course content, course calendar publishing, automated quizzes and exams, discuss
 \cventry{2013--2017}{Member, The KGPian Game Theory Society}{IIT Kharagpur}{}{}{
 \begin{description}
 \item[$\bullet$] Published an article \texttt{Inheritance and Game Thoery} in \texttt{The Strategist}, the newsletter of the society about an application of multi-person prisoner's dilemma in real life. 
-\item[$\bullet$] Developed an online multiplayer game based on multi-round Split or Steal for society's annual event, War of Wits which saw the participation of around 500 people.
+\item[$\bullet$] Developed an online multiplayer game based on multi-round Split or Steal for society's annual event, War of Wits (with a participation of around 500).
 \end{description}
 }
 
@@ -211,11 +214,9 @@ course content, course calendar publishing, automated quizzes and exams, discuss
 
 \cventry{2013--2015}{Volunteer, National Service Scheme (NSS)}{IIT Kharagpur}{}{}{
 \begin{description}
-\item[$\bullet$] Team Leader of the gold winning unit in NSS Annual Camp 2014 and group leader for the academic session 2014-15.
+\item[$\bullet$] Taught underprivileged students in villages schools and organized several awareness drive for social and environmental issues. 
+%\item[$\bullet$] Team Leader of the gold winning unit in NSS Annual Camp 2014 and group leader for the academic session 2014-15.
 \end{description}
 }
-
-
-
 \end{document}
 
