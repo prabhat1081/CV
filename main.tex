@@ -20,27 +20,27 @@
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
 
 % adjust the page margins
-\usepackage[scale=0.9]{geometry}
+\usepackage[left=0.4in, right=0.5in, top=0.5in, bottom=0.5in]{geometry}
 
-%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\setlength{\hintscolumnwidth}{3cm}                        % if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 %\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
 
-\renewcommand*{\namefont}{\fontsize{24}{26}\mdseries\upshape}
+\renewcommand*{\namefont}{\fontsize{22}{24}\mdseries\upshape}
 \renewcommand*{\titlefont}{\large\mdseries\slshape}
 
 %\renewcommand*{\namefont}{\fontsize{42}{40}\mdseries\upshape}
 % personal data
 \firstname{Prabhat}
 \familyname{Agarwal}
-\title{Analyst, Goldman Sachs}           
+\title{Analyst, Goldman Sachs}
 \address{5th Cross, 27th Main, Ejipura}{Bangalore-560047}{India}    % optional, remove the line if not wanted
 \mobile{+918697823093}                    % optional, remove the line if not wanted
 \email{prabhat.agr2010@gmail.com}                      % optional, remove the line if not wanted
 %\social[github]{prabhat1081}
 %\social[linkedin]{agarwal-prabhat}
 %\social[stackoverflow][stackoverflow.com/users/3465519/ma08]{ma08}
-\homepage{prabhat1081.github.io}                % optional, remove the line if not wanted
+%\homepage{prabhat1081.github.io}                % optional, remove the line if not wanted
 %\extrainfo{\httplink[stackoverflow/ma08]{stackoverflow.com/users/3465519/ma08}} % optional, remove the line if not wanted
 
 % to show numerical labels in the bibliography; only useful if you make citations in your resume
@@ -71,23 +71,29 @@
 \cvline{Aggregate:}{\small 95.43\%}
 \end{comment}
 
+\begin{comment}
+
 \renewcommand{\bibliographyitemlabel}{{\@2017}}
 \nocite{*}
 \bibliographystyle{ieeetr}
 \bibliography{./publications}
 
+\end{comment}
+
 \section{Work Experience}
 
-\cventry{Jun 2017 - Present}{Analyst}{}{Goldman Sachs}{}{
+\cventry{Jun 2017 - Present}{Analyst}{SecDb Architecture, Core Engineering}{Goldman Sachs}{}{
 \begin{description}
-    \item[$\bullet$] Designed and developed a tool to help resolve write conflicts during replication in firm's proprietary multi--master globally replicated database. Achieved a performance improvement of 1000\% over the existing tool. 
-    \item[$\bullet$] Developed a proof of concept for a scalable, highly available distributed database service to allow trade booking and real-time risk calculation for all businesses of the firm with sub--millisecond read-write latencies.
+    \item[$\bullet$] Leading a team of 4 to develop a solution to provide a central service for real-time queries on firm's primary trade and risk data, with horizontal scalability, high availability and multi-region deployment.
+    \item[$\bullet$] Worked on developing a proof of concept for a scalable, highly available distributed database to allow trade booking and real-time risk calculation for all businesses of the firm with sub--millisecond read-write latencies.
+    \item[$\bullet$] Enhanced transaction/write controls and conflict meta-data generation in firm's proprietary trade database.
+    \item[$\bullet$] Designed and developed a tool to help resolve synchronization conflicts in firm's proprietary multi--master globally replicated database. Achieved a performance improvement of 1000\% over the existing tool.
 \end{description}
 }
 
-\cventry{May-Jul 2016}{Summer Analyst}{}{Goldman Sachs}{}{
+\cventry{May-Jul 2016}{Summer Analyst}{SecDb Architecture, Core Engineering}{Goldman Sachs}{}{
 \begin{description}
-  \item[$\bullet$] Developed a module system, following JDK9’s module specifications, for firm’s platform based on JDK8 providing interoperability between several JVM languages and firm’s proprietary language.
+  \item[$\bullet$] Developed a module system, following JDK9’s module specifications, for firm’s platform based on JDK8 providing interoperability between several JVM languages and the firm’s proprietary language.
   \item[$\bullet$] Designed a JSON specification to define a module's communication contract, enhanced the platform’s distributed build system to enforce the contract during the build and designed a custom Java runtime using Java class-loader hierarchy to enforce encapsulation at runtime.
 \end{description}
 }
@@ -102,7 +108,7 @@
 
 \section{Key Projects}
 
-\cventry{Jul 2016 - Apr 2017}{FactRanker: Automatic Ranking of check-worthy claims}{B.Tech Thesis}{\href{http://cse.iitkgp.ac.in/~pawang/}{Dr. Pawan Goyal} and  \href{https://engineering.purdue.edu/~sbagchi/}{Dr. Saurabh Bagchi (Purdue University)}}{}{
+\cventry{Jul 2016 - Apr 2017}{FactRanker: Automatic Ranking of check-worthy claims}{B.Tech Thesis}{\href{http://cse.iitkgp.ac.in/~pawang/}{Dr. Pawan Goyal (IIT Kharagpur)} and  \href{https://engineering.purdue.edu/~sbagchi/}{Dr. Saurabh Bagchi (Purdue University)}}{}{
 \begin{description}
 \item[$\bullet$] Curated a dataset of political debates from the 2016 US Presidential election campaign annotated using all major fact-checking media outlets.
 \item[$\bullet$] Designed a system FactRanker to rank claims by their check--worthiness using the score of an SVM classifier trained on text (e.g. POS tags, sentiment, word dependencies) and contextual features (e.g. topic, sentence homogeneity).
@@ -110,14 +116,16 @@
 \end{description}
 }
 
-\cventry{Jan-May 2017}{Stance Classification of News Articles}{B.Tech Thesis}{\href{http://cse.iitkgp.ac.in/~pawang/}{Dr. Pawan Goyal}}{}{
+\begin{comment}
+
+\cventry{Jan-May 2017}{Stance Classification of News Articles}{B.Tech Thesis}{\href{http://cse.iitkgp.ac.in/~pawang/}{Dr. Pawan Goyal (IIT Kharagpur)}}{}{
 \begin{description}
 \item[$\bullet$] Designed a classifier using bidirectional conditional encoding with word-by-word attention to classify if an article agrees, disagrees or is neutral to a given statement or headline.
 \item[$\bullet$] Achieved an accuracy of 74.52\%, an improvement of 10.1\% over the baseline model using text features.
 \end{description}
 }
 
-\cventry{Jul 2015 - Jan 2016}{Code switching and swearing patterns on social media}{}{\href{http://cse.iitkgp.ac.in/~pawang/}{Dr. Pawan Goyal} and \href{https://www.microsoft.com/en-us/research/people/monojitc/}{Dr. Monojit Choudhury (Microsoft Research, India)}}{}{
+\cventry{Jul 2015 - Jan 2016}{Code--switching and swearing patterns on social media}{}{\href{http://cse.iitkgp.ac.in/~pawang/}{Dr. Pawan Goyal (IIT Kharagpur)} and \href{https://www.microsoft.com/en-us/research/people/monojitc/}{Dr. Monojit Choudhury (Microsoft Research, India)}}{}{
 \begin{description}
 \item[$\bullet$] Developed a rule-based classifier (with 72\% precision) to detect swears in Romanized Hindi and English tweets.
 \item[$\bullet$] Used phonetics to match swears in Romanized Hindi to account for large spelling variations in transliteration.
@@ -125,7 +133,7 @@
 \end{description}
 }
 
-\cventry{Jan-Apr 2016}{Citation Recommendation based on citation contexts}{}{\href{http://cse.iitkgp.ac.in/~pawang/}{Dr. Pawan Goyal}}{}{
+\cventry{Jan-Apr 2016}{Citation Recommendation based on citation contexts}{}{\href{http://cse.iitkgp.ac.in/~animeshm/}{Dr. Animesh Mukherjee (IIT Kharagpur)}}{}{
 \begin{description}
 \item[$\bullet$] Developed a system to recommend scientific articles to cite in a paper for queried citation context.
 \item[$\bullet$] Used popular IR algorithms like tf-idf, BM25, LSA, query expansion, etc.
@@ -133,7 +141,7 @@
 \end{description}
 }
 
-\cventry{Jul-Nov 2016}{Anomaly Detection in Surveillance Video Feeds}{}{\href{http://cse.iitkgp.ac.in/~pabitra/}{Dr. Pabitra Mitra}}{}{
+\cventry{Jul-Nov 2016}{Anomaly Detection in Surveillance Video Feeds}{}{\href{http://cse.iitkgp.ac.in/~pabitra/}{Dr. Pabitra Mitra (IIT Kharagpur)}}{}{
 \begin{description}
 \item[$\bullet$] Used Time Series analysis over frame level feature representation to detect anomalous frames in stationary surveillance videos.
 \end{description}
@@ -141,23 +149,28 @@
 
 \section{Other Projects}
 
-\cventry{Jul-Nov 2016}{Automated Abstract generation of Scientific Articles using Deep Learning}{}{\href{http://cse.iitkgp.ac.in/~pawang/}{Dr. Pawan Goyal}}{}{
+\end{comment}
+
+\begin{comment}
+
+\cventry{Jul-Nov 2016}{Automated Abstract generation of Scientific Articles using Deep Learning}{}{\href{http://cse.iitkgp.ac.in/~pawang/}{Dr. Pawan Goyal (IIT Kharagpur)}}{}{
 \begin{description}
 \item[$\bullet$] Used Para2Vec to learn low dimensional representations of individual sections of scientific articles.
-\item[$\bullet$] Modelled document as a sequence of sections and employed Sequence to Sequence model of LSTMs on the learned representations to generate abstractive summary.
+\item[$\bullet$] Modeled document as a sequence of sections and employed Sequence to Sequence model of LSTMs on the learned representations to generate an abstractive summary.
 \end{description}
 }
+\end{comment}
 
 \cventry{Jan-Apr 2016}{Online Course Management System}{}{}{}{
 \begin{description}
-\item[$\bullet$] Created a web-based application aimed at self-paced learning featuring online course design, text, and video-based
+\item[$\bullet$] Created a web-based application aimed at self-paced learning featuring online course design, text, and video--based
 course content, course calendar publishing, automated quizzes and exams, discussion forums, and e-mail communication.
 \end{description}
 }
 
 \cventry{Jul-Nov 2015}{Compiler for TinyC}{}{}{}{
 \begin{description}
-\item[$\bullet$] Built a compiler for TinyC (language having subset of features of \texttt{C}) targeted at \texttt{x86\_64} architecture using \texttt{Flex} and \texttt{Bison}.
+\item[$\bullet$] Built a compiler for TinyC (language having a subset of features of \texttt{C}) targeted at \texttt{x86\_64} architecture using \texttt{Flex} and \texttt{Bison}.
 \end{description}
 }
 
@@ -177,18 +190,20 @@ course content, course calendar publishing, automated quizzes and exams, discuss
 
 \cvitem{2017}{Awarded Institute Silver Medal for being the best student in order of merit among the graduating B.Tech (Hons.) degree in Computer Science and Engineering}
 
-\cvitem{2017}{Won bronze medal in Opensoft (inter hostel tech competition) for developing a distributed web-based photo-sharing app using blockchain.}
+\cvitem{2017}{Won a bronze medal in Opensoft (an inter--hostel tech competition) for developing a distributed web-based photo-sharing app using blockchain.}
 
 %\cvitem{2016}{Received J.C. Ghosh Memorial Endowment Prize for securing highest CGPA in the department at the end of 6th semester.}
 
 %\cvitem{2016}{Secured 1st position in a team of 4 in event Code-O-Shuffle (online programming competition) in Kshitij (annual techno-management fest), IIT Kharagpur, 2016.}
 %\cvitem{2015}{Was awarded Goralal Syngal Memorial Scholarship for securing 2nd highest CGPA at the end of 4th semester among the students of the department of CSE, ECE, and EE.}
-\cvitem{2015}{Awarded Sachinandan Basak Memorial Endowment Prize for best National Social Service (program aimed at developing rural areas near institutes) volunteer student of the year 2014-15 among about 400 students.}
+%\cvitem{2015}{Awarded Sachinandan Basak Memorial Endowment Prize for best National Social Service (a program aimed at developing rural areas near institutes) volunteer student of the year 2014-15 among about 400 students.}
 
 \section{Technical Experience}
-\cvline{languages}{\texttt{C, C++, Java, Python, JavaScript, Haskell}}
-\cvline{machine learning tools}{\texttt{scikit-learn, gensim, Tensorflow}}
-\cvline{others}{\texttt{NLTK, gdb, Git, network and systems programming}}
+\cvline{languages}{\texttt{C, C++, Java, Python, JavaScript}}
+%\cvline{machine learning tools}{\texttt{scikit-learn, gensim, Tensorflow}}
+\cvline{others}{\texttt{gdb, asio, Git, network and systems programming}}
+
+\begin{comment}
 
 \section{Relevant Coursework}
 
@@ -197,26 +212,32 @@ course content, course calendar publishing, automated quizzes and exams, discuss
 \cvline{Systems}{Operating Systems, Computer Organization \& Architecture, Database Management Systems, Parallel \& Distributed Algorithms}
 \cvline{Artificial Intelligence}{Artificial Intelligence, Machine Learning, Information Retrieval, Social Computing, Speech \& Natural Language Processing, Deep Learning}
 
+\end{comment}
+
 \section{Extra Curricular Activities}
 
-\cventry{2013--2017}{Member, The KGPian Game Theory Society}{IIT Kharagpur}{}{}{
+\cventry{2013--2015}{Volunteer, National Service Scheme (NSS)}{IIT Kharagpur}{}{}{
 \begin{description}
-\item[$\bullet$] Published an article \texttt{Inheritance and Game Thoery} in \texttt{The Strategist}, the newsletter of the society about an application of multi-person prisoner's dilemma in real life. 
-\item[$\bullet$] Developed an online multiplayer game based on multi-round Split or Steal for society's annual event, War of Wits (with a participation of around 500).
+\item[$\bullet$] Assisted in teaching underprivileged students in village schools and organized several awareness-drive for social and environmental issues. 
+\item[$\bullet$] Team Leader of the gold winning unit (of 15 units) in NSS Annual Camp 2014 and group leader for the academic session 2014--15.
 \end{description}
 }
+
+\begin{comment}
 
 \cventry{2015--2017}{Student Mentor}{IIT Kharagpur}{}{}{
 \begin{description}
 \item[$\bullet$] Mentored a group of 5 freshmen in academic and non-academic activities to ease their transition into college life.
 \end{description}
 }
+\end{comment}
 
-\cventry{2013--2015}{Volunteer, National Service Scheme (NSS)}{IIT Kharagpur}{}{}{
+\cventry{2013--2017}{Member, The KGPian Game Theory Society}{IIT Kharagpur}{}{}{
 \begin{description}
-\item[$\bullet$] Taught underprivileged students in villages schools and organized several awareness drive for social and environmental issues. 
-%\item[$\bullet$] Team Leader of the gold winning unit in NSS Annual Camp 2014 and group leader for the academic session 2014-15.
+\item[$\bullet$] Published an article \texttt{Inheritance and Game Theory} in \texttt{The Strategist}, the newsletter of the society about an application of multi-person prisoner's dilemma in real life. 
 \end{description}
 }
+
+
 \end{document}
 
