@@ -33,10 +33,10 @@
 % personal data
 \firstname{Prabhat}
 \familyname{Agarwal}
-\title{Analyst, Goldman Sachs}
-\address{5th Cross, 27th Main, Ejipura}{Bangalore-560047}{India}    % optional, remove the line if not wanted
-\mobile{+918697823093}                    % optional, remove the line if not wanted
-\email{prabhat.agr2010@gmail.com}                      % optional, remove the line if not wanted
+\title{MS in Computer Science, Stanford University }
+\address{781, Escondido Road}{Stanford, CA - 94305}{}    % optional, remove the line if not wanted
+%\mobile{+918697823093}                    % optional, remove the line if not wanted
+\email{prabhat8@cs.stanford.edu}                      % optional, remove the line if not wanted
 %\social[github]{prabhat1081}
 %\social[linkedin]{agarwal-prabhat}
 %\social[stackoverflow][stackoverflow.com/users/3465519/ma08]{ma08}
@@ -62,6 +62,7 @@
 \section{Education}
 \cventry{\textbf{2013--2017}}{B.Tech (Hons.) in Computer Science and Engineering}{IIT Kharagpur}{West Bengal}{}{}
 \cvline{CGPA:}{\small 9.93/10 (Dep. Rank: 1, Inst. Rank: 2)}
+
 \begin{comment}
 
 \cventry{\textbf{2013}}{Indian School Certificate Examination (ISC)}{}{Maria's Day School, Howrah, West Bengal}{}{}
@@ -71,23 +72,19 @@
 \cvline{Aggregate:}{\small 95.43\%}
 \end{comment}
 
-\begin{comment}
-
 \renewcommand{\bibliographyitemlabel}{{\@2017}}
 \nocite{*}
 \bibliographystyle{ieeetr}
 \bibliography{./publications}
 
-\end{comment}
-
 \section{Work Experience}
 
 \cventry{Jun 2017 - Present}{Analyst}{SecDb Architecture, Core Engineering}{Goldman Sachs}{}{
 \begin{description}
-    \item[$\bullet$] Leading a team of 4 to develop a solution to provide a central service for real-time queries on firm's primary trade and risk data, with horizontal scalability, high availability and multi-region deployment.
-    \item[$\bullet$] Worked on developing a proof of concept for a scalable, highly available distributed database to allow trade booking and real-time risk calculation for all businesses of the firm with sub--millisecond read-write latencies.
+    \item[$\bullet$] Lead a team of 4 to develop a system to provide a central service for real-time queries on firm's primary trade and risk data, with horizontal scalability, high availability and multi--region deployment.
+    \item[$\bullet$] Worked on developing a proof of concept for a scalable, highly available distributed database to allow trade booking and real-time risk calculation for all businesses of the firm with sub--millisecond read--write latencies.
     \item[$\bullet$] Enhanced transaction/write controls and conflict meta-data generation in firm's proprietary trade database.
-    \item[$\bullet$] Designed and developed a tool to help resolve synchronization conflicts in firm's proprietary multi--master globally replicated database. Achieved a performance improvement of 1000\% over the existing tool.
+    %\item[$\bullet$] Designed and developed a tool to help resolve synchronization conflicts in firm's proprietary multi--master globally replicated database. Achieved a performance improvement of 1000\% over the existing tool.
 \end{description}
 }
 
@@ -97,7 +94,7 @@
   \item[$\bullet$] Designed a JSON specification to define a module's communication contract, enhanced the platform’s distributed build system to enforce the contract during the build and designed a custom Java runtime using Java class-loader hierarchy to enforce encapsulation at runtime.
 \end{description}
 }
-
+\begin{comment}
 \cventry{May-Jul, 2015}{Summer Intern}{}{Dr. D B Phatak, IIT Bombay}{}{
 \begin{description}
   \item[$\bullet$] Developed a web-based application (codzilla.org.in) to help in basic programming language courses.
@@ -105,7 +102,7 @@
 \end{description}
 }
 
-
+\end{comment}
 \section{Key Projects}
 
 \cventry{Jul 2016 - Apr 2017}{FactRanker: Automatic Ranking of check-worthy claims}{B.Tech Thesis}{\href{http://cse.iitkgp.ac.in/~pawang/}{Dr. Pawan Goyal (IIT Kharagpur)} and  \href{https://engineering.purdue.edu/~sbagchi/}{Dr. Saurabh Bagchi (Purdue University)}}{}{
@@ -116,7 +113,6 @@
 \end{description}
 }
 
-\begin{comment}
 
 \cventry{Jan-May 2017}{Stance Classification of News Articles}{B.Tech Thesis}{\href{http://cse.iitkgp.ac.in/~pawang/}{Dr. Pawan Goyal (IIT Kharagpur)}}{}{
 \begin{description}
@@ -127,8 +123,7 @@
 
 \cventry{Jul 2015 - Jan 2016}{Code--switching and swearing patterns on social media}{}{\href{http://cse.iitkgp.ac.in/~pawang/}{Dr. Pawan Goyal (IIT Kharagpur)} and \href{https://www.microsoft.com/en-us/research/people/monojitc/}{Dr. Monojit Choudhury (Microsoft Research, India)}}{}{
 \begin{description}
-\item[$\bullet$] Developed a rule-based classifier (with 72\% precision) to detect swears in Romanized Hindi and English tweets.
-\item[$\bullet$] Used phonetics to match swears in Romanized Hindi to account for large spelling variations in transliteration.
+\item[$\bullet$] Developed a rule-based classifier (with 72\% precision) to detect swears in Romanized Hindi and English tweets using phonetic edit distance to detect swears in Romanized Hindi to account for large spelling variations due to transliteration.
 \item[$\bullet$] Studied correlation of topic, gender, location, and language preferences while swearing.
 \end{description}
 }
@@ -149,9 +144,7 @@
 
 \section{Other Projects}
 
-\end{comment}
 
-\begin{comment}
 
 \cventry{Jul-Nov 2016}{Automated Abstract generation of Scientific Articles using Deep Learning}{}{\href{http://cse.iitkgp.ac.in/~pawang/}{Dr. Pawan Goyal (IIT Kharagpur)}}{}{
 \begin{description}
@@ -159,7 +152,7 @@
 \item[$\bullet$] Modeled document as a sequence of sections and employed Sequence to Sequence model of LSTMs on the learned representations to generate an abstractive summary.
 \end{description}
 }
-\end{comment}
+
 
 \cventry{Jan-Apr 2016}{Online Course Management System}{}{}{}{
 \begin{description}
@@ -196,14 +189,13 @@ course content, course calendar publishing, automated quizzes and exams, discuss
 
 %\cvitem{2016}{Secured 1st position in a team of 4 in event Code-O-Shuffle (online programming competition) in Kshitij (annual techno-management fest), IIT Kharagpur, 2016.}
 %\cvitem{2015}{Was awarded Goralal Syngal Memorial Scholarship for securing 2nd highest CGPA at the end of 4th semester among the students of the department of CSE, ECE, and EE.}
-%\cvitem{2015}{Awarded Sachinandan Basak Memorial Endowment Prize for best National Social Service (a program aimed at developing rural areas near institutes) volunteer student of the year 2014-15 among about 400 students.}
+\cvitem{2015}{Awarded Sachinandan Basak Memorial Endowment Prize for best National Social Service (a program aimed at developing rural areas near institutes) volunteer student of the year 2014-15 among about 400 students.}
 
 \section{Technical Experience}
 \cvline{languages}{\texttt{C, C++, Java, Python, JavaScript}}
-%\cvline{machine learning tools}{\texttt{scikit-learn, gensim, Tensorflow}}
+\cvline{frameworks}{\texttt{scikit-learn, Tensorflow}}
 \cvline{others}{\texttt{gdb, asio, Git, network and systems programming}}
 
-\begin{comment}
 
 \section{Relevant Coursework}
 
@@ -212,7 +204,6 @@ course content, course calendar publishing, automated quizzes and exams, discuss
 \cvline{Systems}{Operating Systems, Computer Organization \& Architecture, Database Management Systems, Parallel \& Distributed Algorithms}
 \cvline{Artificial Intelligence}{Artificial Intelligence, Machine Learning, Information Retrieval, Social Computing, Speech \& Natural Language Processing, Deep Learning}
 
-\end{comment}
 
 \section{Extra Curricular Activities}
 
